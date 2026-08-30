@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bhavi Mart</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f5f6f8;
+      color: #222;
+    }
+
+    header {
+      background: #111827;
+      color: white;
+      padding: 18px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .tagline {
+      font-size: 11px;
+      color: #d1d5db;
+      margin-top: 4px;
+    }
+
+    .cart {
+      font-size: 22px;
+    }
+
+    .search {
+      margin-top: 15px;
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 10px;
+      font-size: 15px;
+    }
+
+    .hero {
+      margin: 18px;
+      padding: 25px;
+      border-radius: 18px;
+      background: linear-gradient(135deg, #111827, #374151);
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: 27px;
+      margin-bottom: 8px;
+    }
+
+    .hero p {
+      color: #e5e7eb;
+      margin-bottom: 15px;
+    }
+
+    .btn {
+      border: none;
+      padding: 11px 18px;
+      border-radius: 8px;
+      background: white;
+      color: #111827;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 0 18px;
+      margin-bottom: 22px;
+    }
+
+    h2 {
+      margin-bottom: 12px;
+      font-size: 20px;
+    }
+
+    .categories {
+      display: flex;
+      gap: 10px;
+      overflow-x: auto;
+    }
+
+    .category {
+      min-width: 95px;
+      background: white;
+      padding: 15px 10px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 2px 8px #00000012;
+    }
+
+    .category span {
+      font-size: 25px;
+      display: block;
+      margin-bottom: 7px;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+
+    .product {
+      background: white;
+      border-radius: 14px;
+      padding: 12px;
+      box-shadow: 0 2px 8px #00000012;
+    }
+
+    .product-img {
+      height: 120px;
+      background: #eef0f3;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 45px;
+      margin-bottom: 10px;
+    }
+
+    .product h3 {
+      font-size: 15px;
+      margin-bottom: 6px;
+    }
+
+    .price {
+      font-weight: bold;
+      font-size: 17px;
+    }
+
+    .reward {
+      background: white;
+      border-radius: 15px;
+      padding: 18px;
+      box-shadow: 0 2px 8px #00000012;
+    }
+
+    .reward h3 {
+      margin-bottom: 7px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: #666;
+      font-size: 13px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="top">
+    <div>
+      <div class="logo">BHAVI MART</div>
+      <div class="tagline">Premium Shopping • Smart Rewards</div>
+    </div>
+    <div class="cart">🛒</div>
+  </div>
+
+  <input
+    class="search"
+    type="search"
+    placeholder="Search products..."
+  >
+</header>
+
+<div class="hero">
+  <h1>Shop Smart</h1>
+  <p>Premium products, exciting deals and rewards.</p>
+  <button class="btn">Shop Now</button>
+</div>
+
+<section>
+  <h2>Categories</h2>
+
+  <div class="categories">
+    <div class="category">
+      <span>📱</span>
+      Electronics
+    </div>
+
+    <div class="category">
+      <span>👕</span>
+      Fashion
+    </div>
+
+    <div class="category">
+      <span>🏠</span>
+      Home
+    </div>
+
+    <div class="category">
+      <span>🎧</span>
+      Accessories
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Popular Products</h2>
+
+  <div class="products">
+
+    <div class="product">
+      <div class="product-img">📱</div>
+      <h3>Smartphone</h3>
+      <div class="price">₹14,999</div>
+    </div>
+
+    <div class="product">
+      <div class="product-img">🎧</div>
+      <h3>Wireless Earbuds</h3>
+      <div class="price">₹1,499</div>
+    </div>
+
+    <div class="product">
+      <div class="product-img">⌚</div>
+      <h3>Smart Watch</h3>
+      <div class="price">₹2,999</div>
+    </div>
+
+    <div class="product">
+      <div class="product-img">👟</div>
+      <h3>Running Shoes</h3>
+      <div class="price">₹1,999</div>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <h2>🎁 Bhavi Rewards</h2>
+
+  <div class="reward">
+    <h3>Earn Rewards on Shopping</h3>
+    <p>Buy eligible products and collect reward points for future benefits.</p>
+  </div>
+</section>
+
+<footer>
+  © 2026 Bhavi Mart — Premium Shopping Platform
+</footer>
+
+</body>
+  </html>
